@@ -23,8 +23,7 @@
   height: 12px;
 }
 
-#panel .popup-menu-arrow,
-#panel .app-menu-icon {
+#panel .popup-menu-arrow {
   width: 0;
   height: 0;
   margin: 0;
@@ -60,14 +59,10 @@
 }
 
 #panel #appMenu {
-  margin-left: 8px;
-  margin-right: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #panel #appMenu .popup-menu-arrow {
   margin-left: 5px;
-}
-
-#panel #appMenu .app-menu-icon > StIcon {
-  icon-shadow: none;
 }
