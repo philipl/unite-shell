@@ -177,5 +177,18 @@ var WindowButtons = class WindowButtons extends Base {
     }
 
     this._controls.setVisible(visible)
+
+    let activitiesButton = Main.panel.statusArea['apps-menu']
+    if (!activitiesButton) {
+      activitiesButton = Main.panel.statusArea['activities']
+    }
+
+    if (activitiesButton) {
+      if (visible) {
+        activitiesButton.container.hide()
+      } else {
+        activitiesButton.container.show()
+      }
+    }
   }
 }
