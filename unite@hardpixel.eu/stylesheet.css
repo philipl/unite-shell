@@ -31,16 +31,18 @@
 }
 
 #panel .window-buttons-box {
+  margin-left: 3px;
+  margin-right: 3px;
   spacing: 2px;
 }
 
 #panel .window-buttons-box:first-child .window-button:first-child {
-  padding-left: 2px;
+  padding-left: 0px;
 }
 
 #panel .window-buttons-box .window-button {
-  width: 22px;
-  height: 28px;
+  width: 19px;
+  height: 19px;
 }
 
 #panel .window-buttons-box .icon {
