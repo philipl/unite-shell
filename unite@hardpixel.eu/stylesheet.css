@@ -68,3 +68,26 @@
 #panel #appMenu .popup-menu-arrow {
   margin-left: 5px;
 }
+
+#panel #panelApplications,
+#panel #panelActivities {
+  width: 67px;
+}
+
+#panel #panelApplications > *,
+#panel #panelActivities > * {
+  background-color: transparent;
+  color: transparent;
+  background-image: url("assets/activities.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+#panel #panelApplications:hover > *,
+#panel #panelApplications:active > *,
+#panel #panelApplications:focus > *,
+#panel #panelActivities:hover > *,
+#panel #panelActivities:active > *,
+#panel #panelActivities:focus > * {
+  background-image: url("assets/activities-active.svg");
+}
