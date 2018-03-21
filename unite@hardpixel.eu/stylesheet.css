@@ -46,3 +46,22 @@
   box-shadow: none;
   border: 0;
 }
+
+#panel #panelApplications > *,
+#panel #panelActivities > * {
+  background-color: transparent;
+  color: transparent;
+  background-image: url("assets/activities.svg");
+  background-position: center;
+  background-size: contain;
+  width: 57px;
+}
+
+#panel #panelApplications:hover > *,
+#panel #panelApplications:active > *,
+#panel #panelApplications:focus > *,
+#panel #panelActivities:hover > *,
+#panel #panelActivities:active > *,
+#panel #panelActivities:focus > * {
+  background-image: url("assets/activities-active.svg");
+}
