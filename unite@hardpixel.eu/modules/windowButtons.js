@@ -184,7 +184,10 @@ var WindowButtons = new GObject.Class({
 
     let activitiesButton = Main.panel.statusArea['apps-menu'];
     if (!activitiesButton) {
-      activitiesButton = Main.panel.statusArea['activities'];
+      activitiesButton = Main.panel.statusArea['arc-menu'];
+      if (!activitiesButton) {
+        activitiesButton = Main.panel.statusArea['activities'];
+      }
     }
 
     if (activitiesButton) {
