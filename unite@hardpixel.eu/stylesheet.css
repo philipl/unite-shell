@@ -33,7 +33,7 @@
 #panel .window-buttons-box {
   margin-left: 3px;
   margin-right: 3px;
-  spacing: 2px;
+  spacing: 4px;
 }
 
 #panel .window-buttons-box:first-child .window-button:first-child {
@@ -41,8 +41,8 @@
 }
 
 #panel .window-buttons-box .window-button {
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
 }
 
 #panel .window-buttons-box .icon {
