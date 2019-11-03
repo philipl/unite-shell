@@ -121,6 +121,22 @@ var WindowControls = GObject.registerClass(
 
     setVisible(visible) {
       this.container.visible = visible
+
+      let activitiesButton = Main.panel.statusArea['apps-menu']
+      if (!activitiesButton) {
+        activitiesButton = Main.panel.statusArea['arc-menu']
+        if (!activitiesButton) {
+          activitiesButton = Main.panel.statusArea['activities']
+        }
+      }
+
+      if (activitiesButton) {
+        if (visible) {
+          activitiesButton.container.hide()
+        } else {
+          activitiesButton.container.show()
+        }
+      }
     }
   }
 )
